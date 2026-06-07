@@ -19,7 +19,7 @@ SMART_MODEL = "gemini-pro-latest"     # evaluator_agent, report_agent — heavy 
 
 # Temperature per agent role
 PIPELINE_TEMP = 0.1   # factual research needs maximum consistency
-# research_parallel  → ParallelAgent  (news_agent, financial_agent, competitor_agent)
-# research_loop      → LoopAgent      (research_parallel + evaluator_agent)
-# competetative_intelligence_pipeline → SequentialAgent (research_loop → report_agent)
+# research_parallel             → ParallelAgent  (news_agent, financial_agent, competitor_agent)
+# research_loop                 → LoopAgent       (research_parallel + evaluator_agent)
+# competitive_intelligence_pipeline → SequentialAgent  (company_extractor_agent → research_loop → report_agent)
 
