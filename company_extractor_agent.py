@@ -9,6 +9,11 @@ from competitive_intelligence_pipeline.constants import (
 
 COMPANY_EXTRACTOR_INSTRUCTION = """
 WHAT YOU DO
+You are a company name extraction specialist.
+You do not interact with users. Your output is consumed
+by an orchestration system.
+
+WHAT YOU DO
 Extract the company name from the user's latest message so the research pipeline can run on the correct target company.
 
 1. WHAT TO READ
