@@ -19,7 +19,7 @@ research_loop = LoopAgent(
     max_iterations=LOOP_MAX_ITERATIONS,
 )
 
-root_agent = SequentialAgent(
+competitive_intelligence_pipeline = SequentialAgent(
     name="competitive_intelligence_pipeline",
     sub_agents=[company_extractor_agent, research_loop, report_agent],
 )
